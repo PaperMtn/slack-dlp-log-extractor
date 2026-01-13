@@ -12,7 +12,7 @@ The script uses an unofficial Slack API endpoint to retrieve DLP logs. It requir
 
 Instructions on how to retrieve the `d` cookie can be found on my blog [here](https://www.papermtn.co.uk/retrieving-and-using-slack-cookies-for-authentication/)
 
->![NOTE]
+> [!NOTE]
 > Ensure the user account you recover the cookie from has the `DLP Admin` role in your Enterprise. Best practice is to create a dedicated service account for this purpose that otherwise has as few permissions as possible.
 
 ## Usage
@@ -38,7 +38,7 @@ options:
    ```
 2. Run the script with the required arguments:
    ```bash
-    python slack_dlp_log_extractor.py --cookie $D_COOKIE --enterprise_domain $ENTERPRISE_DOMAIN
+    python slack_dlp_log_extractor.py --slack-cookie $D_COOKIE --enterprise_domain $ENTERPRISE_DOMAIN
    ```
 
 > [!NOTE]
